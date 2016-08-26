@@ -1,0 +1,33 @@
+{
+  "name": "certificate-expiry",
+  "version": "1.0.0",
+  "description": "check when a certificates expires",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "https",
+    "cetificate",
+    "expire",
+    "ssl",
+    "tls"
+  ],
+  "author": "ibl-team@lists.forge.bbc.co.uk",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-iplayer-es6": "^2.3.0",
+    "eslint-plugin-mocha": "^4.0.0",
+    "sinon": "^1.17.4"
+  },
+  "eslintConfig": {
+    "extends": "iplayer-es6",
+    "rules": {
+      "no-console": 0
+    }
+  },
+  "dependencies": {
+    "moment": "^2.14.1"
+  }
+}
