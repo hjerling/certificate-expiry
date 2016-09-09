@@ -4,7 +4,10 @@
   "description": "check when a certificates expires",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha -- -R dot",
+    "lint": "eslint .",
+    "posttest": "npm run lint"
   },
   "keywords": [
     "https",
@@ -19,6 +22,7 @@
     "eslint": "^3.0.1",
     "eslint-config-iplayer-es6": "^2.3.0",
     "eslint-plugin-mocha": "^4.0.0",
+    "istanbul": "^0.4.5",
     "sinon": "^1.17.4"
   },
   "eslintConfig": {
